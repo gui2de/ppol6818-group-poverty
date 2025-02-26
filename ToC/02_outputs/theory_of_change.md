@@ -64,7 +64,7 @@ Poverty in Malawi: Malawi's GDP per capita in 2024 is estimated to be between $4
 ---
 
 ## Narrative of Initiative’s Logic
-For an adult to be past the poverty line, they would need over $2.15/day. That would cost $788.40 per year ($2.16 x 365) or $65.7 per month. We will assume that households below the poverty line currently have at least half of that amount already, or $1.08/day. We will therefore provide them with $1.08/day or $32.85/month per household member. A household of 5 people, for example, would receive $164.25/month. We will distribute the money to the female head of household for a duration of 10 years. The decision to pay the money to female heads of household is in accordance with the research that women are more likely than men to spend money in a way that benefits their children[^2]. The decision to distribute money for 10 years is in accordance with the finding that short-term UBIs were less effective than long-term UBIs[^3]. In terms of target area, we are choosing to prioritize the districts with the highest percentage of people in poverty. These districts — see table below — also have some of the highest percentage poverty gaps, or the largest distances to reach the poverty line. Based on these criteria, we identified the Phalombe, Nsanje, and Chitipa districts.
+For an adult to be past the poverty line, they would need over $2.15/day. That would cost $788.40 per year ($2.16 x 365) or $65.7 per month. We will assume that households below the poverty line currently have at least half of that amount already, or $1.08/day. We will therefore provide them with $1.08/day or $32.85/month per household member. A household of 5 people, for example, would receive $164.25/month. We will distribute the money to the head of household for a duration of 10 years. The decision to distribute money for 10 years is in accordance with the finding that short-term UBIs were less effective than long-term UBIs[^3]. In terms of target area, we are choosing to prioritize the districts with the highest percentage of people in poverty. These districts — see table below — also have some of the highest percentage poverty gaps, or the largest distances to reach the poverty line. Based on these criteria, we identified the Phalombe, Nsanje, and Chitipa districts.
 ### Why Choose a UBI Intervention?
 
 - **Alleviating Poverty:**  
@@ -87,7 +87,7 @@ For an adult to be past the poverty line, they would need over $2.15/day. That w
   - Instead of providing the full $2.15/day, households receive $1.08/day (or $32.85/month per household member) based on the assumption that households below the poverty line already have part of the required amount.
   - For example, a household of 5 would receive $164.25 per month.
 - **Distribution:**  
-  - Funds will be disbursed to female heads of households to leverage research indicating that women are more likely to allocate money in ways that benefit their children ([World Bank, 2015](https://blogs.worldbank.org/en/nasikiliza/how-empowering-women-can-help-end-poverty-africa)). This is another layer to our program that sets it apart from previous UBI programs. 
+  - Funds will be disbursed to heads of households. 
 - **Duration:**  
   - The UBI will be provided for a duration of 10 years.
 - **Financial Rationale:**  
@@ -133,7 +133,7 @@ The intervention we proposed is welfare-improving rather than just welfare-redis
 ---
 
 ## Why the study matters and what we are trying to learn
-First, the study will focus on giving the money directly to women to see if household expenditure decisions are affected, as most UBI's are simply provided to the head of household. Next, instead of giving people the full amount to get them above the poverty line ($2.15/day), the study seeks to examine how an extra boost will impact people. This is partially due to the fact that in our counties, 15-25% of the population is not in extreme poverty. We expect that those in different economic stratum will react differently to the stimulus. It’s also driven by the fact that while a huge portion of the population is in extreme poverty, we don’t know the exact amount that they are living on per day and assume it is not $0. Lastly, we hypothesize that many Malawian's people don’t need a huge amount of money to make significant improvements to their day-to-day lives.
+First, instead of giving people the full amount to get them above the poverty line ($2.15/day), the study seeks to examine how an extra boost will impact people. This is partially due to the fact that in our counties, 15-25% of the population is not in extreme poverty. We expect that those in different economic stratum will react differently to the stimulus. It’s also driven by the fact that while a huge portion of the population is in extreme poverty, we don’t know the exact amount that they are living on per day and assume it is not $0. Lastly, we hypothesize that many Malawian's people don’t need a huge amount of money to make significant improvements to their day-to-day lives.
 
 
 Contextually, the study is important as this would be the first implementation of a long-term UBI in Malawi. The closest study is the UBI implemented by [Egger et al., 2022](https://onlinelibrary.wiley.com/doi/full/10.3982/ECTA17945)) in Kenya. However Kenya and Malawi differ in many ways; specifically, they are in different places financially and geographically with potential vastly different constraints on the local economy. In addition Malawi still has a huge proportion of its population working in the agricultural sector. Therefore, the impact of a UBI could be more meaningful in Malawi.
@@ -231,7 +231,6 @@ These effects could generate positive spillovers for the entire community while 
         - Savings account balances
         - Bank account ownership
         - ROSCA participation
-        - Female control over household spending
 
 # Theory of change (Flowchart)
 ```mermaid
@@ -298,7 +297,6 @@ flowchart TD
 - [Integrated Food Security Phase Classification. (2024). IPC country analysis: Kenya.](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1155612/)
 - [World Bank. (2024). Employment in agriculture (% of total employment) – Malawi.](https://data.worldbank.org/indicator/SL.AGR.EMPL.ZS?locations=MW)
 - [International Food Policy Research Institute. (2019). Poverty in Malawi: 2016-2017.](https://massp.ifpri.info/files/2019/06/Poster-on-Poverty-in-Malawi-2016-2017.pdf)
-- [World Bank. (2023). How empowering women can help end poverty in Africa.](https://blogs.worldbank.org/en/nasikiliza/how-empowering-women-can-help-end-poverty-africa)
 - [GiveDirectly. (2023). 2023 Universal Basic Income (UBI) results.](https://www.givedirectly.org/2023-ubi-results/)
 - [World Bank Open Data. (n.d.).](https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?end=2023&locations=KE&start=1983&view=chart)
 - [Landlocked countries: higher transport costs, delays, less trade. (2022, March 28).](https://www.worldbank.org/en/news/feature/2008/06/16/landlocked-countries-higher-transport-costs-delays-less-trade)

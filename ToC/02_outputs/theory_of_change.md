@@ -257,10 +257,6 @@ Staffing and Training: UNICEF’s reports on cash transfer programs in Malawi an
 #### Transition Phase (Years 6-10):
 - Year 6: The government will increase its contribution to 50% of the program costs.
 - Years 7-10: The government’s share will increase by 10% annually, reaching 100% by Year 10.
-    - Tax Revenue from Economic Growth: Increased tax revenue from business taxes, consumption taxes, and income taxes.
-        - Business Taxes: Businesses that experience significant growth due to the UBI (e.g., revenue increases of 20% or more) will pay additional taxes, with a portion earmarked for the program.
-        - Consumption Taxes: Increased consumer spending will generate higher value-added tax (VAT) revenue.
-        - Income Taxes: As more people move out of poverty and into formal employment, income tax revenue will rise.
     - Multiplier Effect: The UBI’s economic multiplier effect (estimated at 1.5-2.5x) will generate additional economic activity, further increasing the tax base. The UBI is expected to stimulate local economies, leading 
       to higher GDP growth. For example, if Malawi’s GDP grows by 2-3% annually due to the UBI, the government could allocate a portion of the increased tax revenue to fund the program. As more people move out of poverty 
       and into formal employment, the tax base will expand, providing a sustainable source of funding for the UBI.

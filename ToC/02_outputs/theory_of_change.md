@@ -128,7 +128,6 @@ The intervention we proposed is welfare-improving rather than just welfare-redis
   - Despite the benefits seen in Kenya, Malawi’s distinct economic challenges (e.g., being landlocked, lower GDP per capita) suggest the UBI could have an even more transformative effect.
 - **Design Details:**  
   - The intervention provides less than the full $2.15/day to account for existing household income.
-  - The decision to direct funds to female heads of households aims to maximize the positive impact on family welfare.
 
 ---
 
@@ -313,7 +312,7 @@ flowchart TD
 
     %% What is intervention
     subgraph INTER["Intervention"]
-      E1[UBI to female head of households in targeted districts]
+      E1[UBI to head of households in targeted districts]
     end
 
     %% Contextual Assumptions

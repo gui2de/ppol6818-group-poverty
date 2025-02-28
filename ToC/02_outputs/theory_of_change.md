@@ -248,15 +248,22 @@ Staffing and Training: UNICEF’s reports on cash transfer programs in Malawi an
 - Total Annual Cost: We are assuming 7500 households in treatment, so the annual cost is approximately $14.8 million.
 - Total 10-Year Cost: Over 10 years, the total transfer cost would be $148 million.
 ### Funding Sources
-Initial Phase (Years 1-5):
-External Funding (75%): International donors and NGOs will cover 75% of the costs.
-Malawian Government (25%): The government will fund 25% of the costs through:
-Progressive Taxation on UBI Recipients: A small, progressive tax will be levied on UBI recipients earning above a certain threshold (e.g., $5/day). This also ensures that the UBI does not create dependency and that those who benefit most from the program contribute back to its sustainability.
-Business Loans: The government will take out low-interest loans from international financial institutions to cover its share.
-Transition Phase (Years 6-10):
-Year 6: The government will increase its contribution to 50% of the program costs.
-Years 7-10: The government’s share will increase by 10% annually, reaching 100% by Year 10. 
-Multiplier Effect: The UBI’s economic multiplier effect (estimated at 1.5-2.5x) will generate additional economic activity, further increasing the tax base. The UBI is expected to stimulate local economies, leading to higher GDP growth. For example, if Malawi’s GDP grows by 2-3% annually due to the UBI, the government could allocate a portion of the increased tax revenue to fund the program. As more people move out of poverty and into formal employment, the tax base will expand, providing a sustainable source of funding for the UBI.
+#### Initial Phase (Years 1-5):
+- External Funding (75%): International donors and NGOs will cover 75% of the costs.
+- Malawian Government (25%): The government will fund 25% of the costs through:
+    - Progressive Taxation on UBI Recipients: A small, progressive tax will be levied on UBI recipients earning above a certain threshold (e.g., $5/day). This also ensures that the UBI does not create dependency and that 
+      those who benefit most from the program contribute back to its sustainability.
+    - Business Loans: The government will take out low-interest loans from international financial institutions to cover its share.
+#### Transition Phase (Years 6-10):
+- Year 6: The government will increase its contribution to 50% of the program costs.
+- Years 7-10: The government’s share will increase by 10% annually, reaching 100% by Year 10.
+    - Tax Revenue from Economic Growth: Increased tax revenue from business taxes, consumption taxes, and income taxes.
+        - Business Taxes: Businesses that experience significant growth due to the UBI (e.g., revenue increases of 20% or more) will pay additional taxes, with a portion earmarked for the program.
+        - Consumption Taxes: Increased consumer spending will generate higher value-added tax (VAT) revenue.
+        - Income Taxes: As more people move out of poverty and into formal employment, income tax revenue will rise.
+    - Multiplier Effect: The UBI’s economic multiplier effect (estimated at 1.5-2.5x) will generate additional economic activity, further increasing the tax base. The UBI is expected to stimulate local economies, leading 
+      to higher GDP growth. For example, if Malawi’s GDP grows by 2-3% annually due to the UBI, the government could allocate a portion of the increased tax revenue to fund the program. As more people move out of poverty 
+      and into formal employment, the tax base will expand, providing a sustainable source of funding for the UBI.
 
 ## Design and Randomization
 

@@ -242,7 +242,7 @@ The government will be able to afford this cost through a number of methods. At 
 - Distribution Mechanism: Mobile money transfers are the most cost-effective method, with administrative costs estimated at 5-10% of the total transfer amount. The World Bank has extensively studied the cost-effectiveness of mobile money transfers in low-income countries. According to their reports, mobile money systems typically have administrative costs ranging from 5-10% of the total transfer amount, depending on the scale and infrastructure.
 - Monitoring and Evaluation (M&E): The Transfer Project, which evaluates cash transfer programs in Africa, estimates that robust M&E systems for large-scale programs typically cost between 500,000 and 1,000,000 annually, depending on the complexity and scope of the evaluation. 
 Staffing and Training: UNICEF’s reports on cash transfer programs in Malawi and other African countries estimate that staffing and training costs for program implementation typically range from 200,000 to 400,000 annually, depending on the number of staff and the complexity of training required.
-### UBI transfer costs:
+#### UBI transfer costs:
 - Monthly UBI Amount: $1.08/day  or $32.85/month per household member.
 - Household Size: Assuming an average household size of 5, each household receives $164.25/month.
 - Total Annual Cost: We are assuming 7500 households in treatment, so the annual cost is approximately $14.8 million.

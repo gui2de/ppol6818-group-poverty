@@ -231,6 +231,48 @@ These effects could generate positive spillovers for the entire community while 
         - Savings account balances
         - Bank account ownership
         - ROSCA participation
+     
+## Cost-Benefit Analysis
+
+At the outset of the program, we will  split the costs of funding the program with the Malawian government, with them paying 25% of the costs and us paying 75%. Over the course of the 10 years, we will gradually transfer full financial responsibility to the government. More specifically, at the end of the first 5 years the Malawian government will be expected to pay 50% of the program costs, followed by a 10% increase each year thereafter.
+
+The government will be able to afford this cost through a number of methods. At the start, the government will charge a progressive tax on all UBI recipients and consider business loans to acquire necessary initial capital. Additionally, any businesses that experience significant growth as a result of the UBI will be required to pay a percentage back in taxes to compensate the government for its investment. We also anticipate a multiplier effect from the UBI investment in the second half of the program that will enable the government to funnel more tax revenue toward the program.
+
+### Cost of the implementation
+#### Administrative Costs: 
+- Distribution Mechanism: Mobile money transfers are the most cost-effective method, with administrative costs estimated at 5-10% of the total transfer amount. The World Bank has extensively studied the cost-effectiveness of mobile money transfers in low-income countries. According to their reports, mobile money systems typically have administrative costs ranging from 5-10% of the total transfer amount, depending on the scale and infrastructure.
+- Monitoring and Evaluation (M&E): The Transfer Project, which evaluates cash transfer programs in Africa, estimates that robust M&E systems for large-scale programs typically cost between 500,000 and 1,000,000 annually, depending on the complexity and scope of the evaluation. 
+Staffing and Training: UNICEF’s reports on cash transfer programs in Malawi and other African countries estimate that staffing and training costs for program implementation typically range from 200,000 to 400,000 annually, depending on the number of staff and the complexity of training required.
+### UBI transfer costs:
+- Monthly UBI Amount: $1.08/day  or $32.85/month per household member.
+- Household Size: Assuming an average household size of 5, each household receives $164.25/month.
+- Total Annual Cost: We are assuming 7500 households in treatment, so the annual cost is approximately $14.8 million.
+- Total 10-Year Cost: Over 10 years, the total transfer cost would be $148 million.
+### Funding Sources
+Initial Phase (Years 1-5):
+External Funding (75%): International donors and NGOs will cover 75% of the costs.
+Malawian Government (25%): The government will fund 25% of the costs through:
+Progressive Taxation on UBI Recipients: A small, progressive tax will be levied on UBI recipients earning above a certain threshold (e.g., $5/day). This also ensures that the UBI does not create dependency and that those who benefit most from the program contribute back to its sustainability.
+Business Loans: The government will take out low-interest loans from international financial institutions to cover its share.
+Transition Phase (Years 6-10):
+Year 6: The government will increase its contribution to 50% of the program costs.
+Years 7-10: The government’s share will increase by 10% annually, reaching 100% by Year 10. 
+Multiplier Effect: The UBI’s economic multiplier effect (estimated at 1.5-2.5x) will generate additional economic activity, further increasing the tax base. The UBI is expected to stimulate local economies, leading to higher GDP growth. For example, if Malawi’s GDP grows by 2-3% annually due to the UBI, the government could allocate a portion of the increased tax revenue to fund the program. As more people move out of poverty and into formal employment, the tax base will expand, providing a sustainable source of funding for the UBI.
+
+## Design and Randomization
+
+### Randomization Level
+Randomization will occur at the village level. While other methods were considered, this will be the simplest way of executing the program. Villages will be chosen randomly to avoid any bias toward certain socioeconomic or demographic groups. In treatment villages, all households will receive payments. Each household will receive $1.08 per household member. Household members include family members of the head of household or people who have been living together for at least 6 months (Beaman & Dillon, 2011).
+
+- Cluster Randomization: The study will randomize at the village level, with 60 villages (30 treatment and 30 control) across the three target districts (Phalombe, Nsanje, and Chitipa).
+- Sample Size: Each village will have approximately 250 households, resulting in a total sample size of 15,000 households (7,500 in treatment and 7,500 in control).
+
+### Measuring Spillovers
+To account for spillover effects, as the study is conducted we will monitor the incomes and growth levels among the control villages. We will look out for patterns such as heightened earnings among control villages neighboring treatment villages. If we find this or any other bias, we will identify such spillover effects in the findings in our study.
+
+- Spillover Effects: Spillovers will be measured by comparing outcomes in control villages with those in treatment villages
+- Key Indicators: Local market prices, employment rates, and business activity will be used to measure spillover effects.
+
 
 # Theory of change (Flowchart)
 ```mermaid

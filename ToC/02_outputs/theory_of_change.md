@@ -233,7 +233,7 @@ These effects could generate positive spillovers for the entire community while 
      
 ## Cost-Benefit Analysis
 
-At the outset of the program, we will  split the costs of funding the program with the Malawian government, with them paying 25% of the costs and us paying 75%. Over the course of the 10 years, we will gradually transfer full financial responsibility to the government. More specifically, at the end of the first 5 years the Malawian government will be expected to pay 50% of the program costs, followed by a 10% increase each year thereafter.
+At the outset of the program, we will  split the costs of funding the program with the Malawian government, with them paying 25% of the costs and our NGO paying 75%. Over the course of the 10 years, we will gradually transfer full financial responsibility to the government. More specifically, at the end of the first 5 years the Malawian government will be expected to pay 50% of the program costs, followed by a 10% increase each year thereafter.
 
 The government will be able to afford this cost through a number of methods. At the start, the government will charge a progressive tax on all UBI recipients and consider business loans to acquire necessary initial capital. Additionally, any businesses that experience significant growth as a result of the UBI will be required to pay a percentage back in taxes to compensate the government for its investment. We also anticipate a multiplier effect from the UBI investment in the second half of the program that will enable the government to funnel more tax revenue toward the program.
 

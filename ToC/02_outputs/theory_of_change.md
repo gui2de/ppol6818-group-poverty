@@ -64,7 +64,7 @@ Poverty in Malawi: Malawi's GDP per capita in 2024 is estimated to be between $4
 ---
 
 ## Narrative of Initiative’s Logic
-For an adult to be past the poverty line, they would need over $2.15/day. That would cost $788.40 per year ($2.16 x 365) or $65.7 per month. We will assume that households below the poverty line currently have at least half of that amount already, or $1.08/day. We will therefore provide them with $1.08/day or $32.85/month per household member. A household of 5 people, for example, would receive $164.25/month. We will distribute the money to the head of household for a duration of 10 years. The decision to distribute money for 10 years is in accordance with the finding that short-term UBIs were less effective than long-term UBIs[^3]. In terms of target area, we are choosing to prioritize the districts with the highest percentage of people in poverty. These districts — see table below — also have some of the highest percentage poverty gaps, or the largest distances to reach the poverty line. Based on these criteria, we identified the Phalombe, Nsanje, and Chitipa districts.
+For an adult to be above the poverty line, they would need over $2.15 per day. According to the IMF, the PPP conversion factor for Malawi in 2025 is 553.1 Malawian kwacha per US dollar, which means that in Malawi, adults with daily earnings of at least 1,189.165 Malawian kwacha are above the poverty line. This is equivalent to $0.69 (US dollars). We will assume that every household below the poverty line already has at least half of this amount per day, that is $0.35 per day. Therefore, the program will provide them with $0.35/day or $10.35/month per household member. A household of 5 people, for example, would receive $51.75/month. We will distribute the money to the head of household for a duration of 10 years. The decision to distribute money for 10 years is in accordance with the finding that short-term UBIs were less effective than long-term UBIs[^3]. In terms of target area, we are choosing to prioritize the districts with the highest percentage of people in poverty. These districts — see table below — also have some of the highest percentage poverty gaps, or the largest distances to reach the poverty line. Based on these criteria, we identified the Phalombe, Nsanje, and Chitipa districts.
 ### Why Choose a UBI Intervention?
 
 - **Alleviating Poverty:**  
@@ -132,7 +132,7 @@ The intervention we proposed is welfare-improving rather than just welfare-redis
 ---
 
 ## Why the study matters and what we are trying to learn
-First, instead of giving people the full amount to get them above the poverty line ($2.15/day), the study seeks to examine how an extra boost will impact people. This is partially due to the fact that in our counties, 15-25% of the population is not in extreme poverty. We expect that those in different economic stratum will react differently to the stimulus. It’s also driven by the fact that while a huge portion of the population is in extreme poverty, we don’t know the exact amount that they are living on per day and assume it is not $0. Lastly, we hypothesize that many Malawian's people don’t need a huge amount of money to make significant improvements to their day-to-day lives.
+First, instead of giving people the full amount to get them above the poverty line ($2.15/day or its equivalent of $0.69), the study seeks to examine how an extra boost will impact people. This is partially due to the fact that in our counties, 15-25% of the population is not in extreme poverty. We expect that those in different economic stratum will react differently to the stimulus. It’s also driven by the fact that while a huge portion of the population is in extreme poverty, we don’t know the exact amount that they are living on per day and assume it is not $0. Lastly, we hypothesize that many Malawian's people don’t need a huge amount of money to make significant improvements to their day-to-day lives.
 
 
 Contextually, the study is important as this would be the first implementation of a long-term UBI in Malawi. The closest study is the UBI implemented by [Egger et al., 2022](https://onlinelibrary.wiley.com/doi/full/10.3982/ECTA17945)) in Kenya. However Kenya and Malawi differ in many ways; specifically, they are in different places financially and geographically with potential vastly different constraints on the local economy. In addition Malawi still has a huge proportion of its population working in the agricultural sector. Therefore, the impact of a UBI could be more meaningful in Malawi.
@@ -243,10 +243,10 @@ The government will be able to afford this cost through international donors and
 - Monitoring and Evaluation (M&E): The Transfer Project, which evaluates cash transfer programs in Africa, estimates that robust M&E systems for large-scale programs typically cost between 500,000 and 1,000,000 annually, depending on the complexity and scope of the evaluation. 
 Staffing and Training: UNICEF’s reports on cash transfer programs in Malawi and other African countries estimate that staffing and training costs for program implementation typically range from 200,000 to 400,000 annually, depending on the number of staff and the complexity of training required.
 #### UBI transfer costs:
-- Monthly UBI Amount: $1.08/day  or $32.85/month per household member.
-- Household Size: Assuming an average household size of 5, each household receives $164.25/month.
-- Total Annual Cost: We are assuming 7500 households in treatment, so the annual cost is approximately $14.8 million.
-- Total 10-Year Cost: Over 10 years, the total transfer cost would be $148 million.
+- Monthly UBI Amount: $0.35/day  or $10.35/month per household member.
+- Household Size: Assuming an average household size of 5, each household receives $51.75/month.
+- Total Annual Cost: We are assuming 7500 households in treatment, so the annual cost is approximately $388.2 thousands.
+- Total 10-Year Cost: Over 10 years, the total transfer cost would be $3.9 millions.
 ### Funding Sources
 #### Initial Phase (Years 1-5):
 - External Funding (75%): International donors and NGOs will cover 75% of the costs.
@@ -349,6 +349,7 @@ flowchart TD
 - [Filmer, Friedman, Kandpal, and Onishi 2021](https://direct.mit.edu/rest/article-abstract/105/2/327/100989/Cash-Transfers-Food-Prices-and-Nutrition-Impacts?redirectedFrom=fulltext)
 - [Society for Community Research and Action. (2019). How Universal Approaches Can Maximize Prevention Efforts.](https://www.communitypsychology.com/universal-approaches/?form=MG0AV3)
 - [UBI Advocates. (2024). Why UBI Works: Hard Evidence of its Impact on Poverty.](https://ubiadvocates.org/why-ubi-works-hard-evidence-of-its-impact-on-poverty/?form=MG0AV3)
-- [UBI Advocates. (2024). Can UBI Reduce Income Inequality?.](https://ubiadvocates.org/can-ubi-reduce-income-inequality/?form=MG0AV3)
+- [UBI Advocates. (2024). Can UBI Reduce Income Inequality?](https://ubiadvocates.org/can-ubi-reduce-income-inequality/?form=MG0AV3)
+- [International Monetary Fund, 2025. Malawi Datasets.](https://www.imf.org/external/datamapper/profile/MWI#:~:text=Real%20GDP%20growth,Malawi)
 
 

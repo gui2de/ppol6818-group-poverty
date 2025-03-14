@@ -261,7 +261,7 @@ Staffing and Training: UNICEF’s reports on cash transfer programs in Malawi an
 ## Design and Randomization
 
 ### Randomization Level
-Randomization will occur at the village level. While other methods were considered, this will be the simplest way of executing the program. Villages will be chosen randomly to avoid any bias toward certain socioeconomic or demographic groups. In treatment villages, all households will receive payments. Each household will receive $1.08 per household member. Household members include family members of the head of household or people who have been living together for at least 6 months (Beaman & Dillon, 2011).
+Randomization will occur at the village level. While other methods were considered, this will be the simplest way of executing the program. Villages will be chosen randomly to avoid any bias toward certain socioeconomic or demographic groups. In treatment villages, all households will receive payments. Each household will receive $o.35/day per household member. Household members include family members of the head of household or people who have been living together for at least 6 months (Beaman & Dillon, 2011).
 
 - Cluster Randomization: The study will randomize at the village level, with 60 villages (30 treatment and 30 control) across the three target districts (Phalombe, Nsanje, and Chitipa).
 - Sample Size: Each village will have approximately 250 households, resulting in a total sample size of 15,000 households (7,500 in treatment and 7,500 in control).

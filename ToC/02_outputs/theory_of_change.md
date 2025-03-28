@@ -355,5 +355,6 @@ flowchart TD
 - [UBI Advocates. (2024). Why UBI Works: Hard Evidence of its Impact on Poverty.](https://ubiadvocates.org/why-ubi-works-hard-evidence-of-its-impact-on-poverty/?form=MG0AV3)
 - [UBI Advocates. (2024). Can UBI Reduce Income Inequality?](https://ubiadvocates.org/can-ubi-reduce-income-inequality/?form=MG0AV3)
 - [International Monetary Fund, 2025. Malawi Datasets.](https://www.imf.org/external/datamapper/profile/MWI#:~:text=Real%20GDP%20growth,Malawi)
+- [Fitzpatrick1, 2023. Which price is right? A comparison of three standard approaches to measuring prices.](https://www-sciencedirect-com.proxy.library.georgetown.edu/science/article/pii/S0304387823000615)
 
 

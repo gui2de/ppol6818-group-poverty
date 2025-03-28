@@ -195,16 +195,27 @@ For the 25% not in extreme poverty, UBI could:
 These effects could generate positive spillovers for the entire community while providing valuable research insights across economic strata.
 
 
-## Data Collection
+## Design and Randomization
 
-### Outputs After the Intervention
-- We will use income level and income change variables as a manipulation check, to confirm that the intervention had the desired effect.
-- **Income Levels:**  
-  - Total income received per month  
-- **Income Change:**  
-  - Changes in household income and poverty rates
+### Randomization Level
+Randomization will occur at the village level. While other methods were considered, this will be the simplest way of executing the program. Villages will be chosen randomly to avoid any bias toward certain socioeconomic or demographic groups. In treatment villages, all households will receive payments. Each household will receive $o.35/day per household member. Household members include family members of the head of household or people who have been living together for at least 6 months (Beaman & Dillon, 2011).
 
-In order to understand the impact of our UBI on welfare in Malawi, we will conduct seven surveys over the course of the 12-year intervention to both our treatment and control groups. These surveys would be conducted at baseline and at the 6 month mark, 1 year mark, 3 year mark, 6 year mark, 9 year mark, and the 12 year mark after the last cash transfer has been distributed.  In these surveys, we will ask questions that measure whether the indicators we are interested in change as a result of the cash transfer. Our indicators are listed below:
+- Cluster Randomization: The study will randomize at the village level, with 60 villages (30 treatment and 30 control) across the three target districts (Phalombe, Nsanje, and Chitipa).
+- Sample Size: Each village will have approximately 250 households, resulting in a total sample size of 15,000 households (7,500 in treatment and 7,500 in control).
+
+### Measuring Spillovers
+To account for spillover effects, as the study is conducted we will monitor the incomes and growth levels among the control villages. We will look out for patterns such as heightened earnings among control villages neighboring treatment villages. If we find this or any other bias, we will identify such spillover effects in the findings in our study.
+
+- Spillover Effects: Spillovers will be measured by comparing outcomes in control villages with those in treatment villages
+- Key Indicators: Local market prices, employment rates, and business activity will be used to measure spillover effects.
+
+
+## Data Collection Process 
+
+The primary data source to understand the impact of our UBI on welfare in Malawi will be household surveys. We will conduct seven household surveys over the course of the 12-year intervention to both our treatment and control groups. These surveys would be conducted at baseline and at the 6 month mark, 1 year mark, 3 year mark, 6 year mark, 9 year mark, and the 12 year mark after the last cash transfer has been distributed. In additon to the baseline in order to gernarate a usable sampling frame we will conduc a hosehold census of all households within the targeted districts. This allows us to draw from the most accurate data when sampling for treatment and control. There is no household eligibility criteria beside being with the sample univerise (i.e. being enumerated within the census) if a village is selected all households within the village are treated. Across surveys if possible we attempt to survey the same intial respondent from the baseline, to retain some intersurvey validty.
+
+In these surveys, we will ask questions that measure whether the indicators we are interested in change as a result of the cash transfer. Our indicators are listed below: 
+
 
 ### Intermediate Indicators 
 - What indicators will be used to measure outcomes?
@@ -234,6 +245,13 @@ In order to understand the impact of our UBI on welfare in Malawi, we will condu
         - ROSCA participation
 
 Our main method of measuring changes among these indicators is simply by asking participants whether they have seen changes in any of these areas. For example, we would ask participants what their employment status was before and after the cash transfer and whether the sector they are employed in has changed. However, for the product prices indicator which is in the market access section, we would also measure it usign the *"mystery shopper"* tecnique which is the more accurate approach to price measurement because it accurately capture mean prices paid by customers controlling by product attributes that may affect prices, such as quality, branding, and supply-chain dynamics (Fitzpatrick, 2023).
+
+### Outputs After the Intervention
+- We will use income level and income change variables as a manipulation check, to confirm that the intervention had the desired effect.
+- **Income Levels:**  
+  - Total income received per month  
+- **Income Change:**  
+  - Changes in household income and poverty rates
      
 ## Cost-Benefit Analysis
 
@@ -261,21 +279,6 @@ Staffing and Training: UNICEF’s reports on cash transfer programs in Malawi an
     - Multiplier Effect: The UBI’s economic multiplier effect (estimated at 1.5-2.5x) will generate additional economic activity, further increasing the tax base. The UBI is expected to stimulate local economies, leading 
       to higher GDP growth. For example, if Malawi’s GDP grows by 2-3% annually due to the UBI, the government could allocate a portion of the increased tax revenue to fund the program. As more people move out of poverty 
       and into formal employment, the tax base will expand, providing a sustainable source of funding for the UBI.
-
-## Design and Randomization
-
-### Randomization Level
-Randomization will occur at the village level. While other methods were considered, this will be the simplest way of executing the program. Villages will be chosen randomly to avoid any bias toward certain socioeconomic or demographic groups. In treatment villages, all households will receive payments. Each household will receive $o.35/day per household member. Household members include family members of the head of household or people who have been living together for at least 6 months (Beaman & Dillon, 2011).
-
-- Cluster Randomization: The study will randomize at the village level, with 60 villages (30 treatment and 30 control) across the three target districts (Phalombe, Nsanje, and Chitipa).
-- Sample Size: Each village will have approximately 250 households, resulting in a total sample size of 15,000 households (7,500 in treatment and 7,500 in control).
-
-### Measuring Spillovers
-To account for spillover effects, as the study is conducted we will monitor the incomes and growth levels among the control villages. We will look out for patterns such as heightened earnings among control villages neighboring treatment villages. If we find this or any other bias, we will identify such spillover effects in the findings in our study.
-
-- Spillover Effects: Spillovers will be measured by comparing outcomes in control villages with those in treatment villages
-- Key Indicators: Local market prices, employment rates, and business activity will be used to measure spillover effects.
-
 
 # Theory of change (Flowchart)
 ```mermaid

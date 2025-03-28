@@ -233,7 +233,7 @@ In order to understand the impact of our UBI on welfare in Malawi, we will condu
         - Bank account ownership
         - ROSCA participation
 
-Our main method of measuring changes among these indicators is simply by asking participants whether they have seen changes in any of these areas. For example, we would ask participants what their employment status was before and after the CT and whether the sector they are employed in has changed. However, for the product prices indicator which is in the market access section, we would also measure it by 
+Our main method of measuring changes among these indicators is simply by asking participants whether they have seen changes in any of these areas. For example, we would ask participants what their employment status was before and after the cash transfer and whether the sector they are employed in has changed. However, for the product prices indicator which is in the market access section, we would also measure it usign the *"mystery shopper"* tecnique which is the more accurate approach to price measurement because it accurately capture mean prices paid by customers controlling by product attributes that may affect prices, such as quality, branding, and supply-chain dynamics (Fitzpatrick, 2023).
      
 ## Cost-Benefit Analysis
 

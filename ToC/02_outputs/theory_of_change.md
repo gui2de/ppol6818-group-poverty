@@ -195,7 +195,7 @@ For the 25% not in extreme poverty, UBI could:
 These effects could generate positive spillovers for the entire community while providing valuable research insights across economic strata.
 
 
-## Indicators to Measure the Impact
+## Data Collection
 
 ### Outputs After the Intervention
 - We will use income level and income change variables as a manipulation check, to confirm that the intervention had the desired effect.
@@ -203,6 +203,8 @@ These effects could generate positive spillovers for the entire community while 
   - Total income received per month  
 - **Income Change:**  
   - Changes in household income and poverty rates
+
+In order to understand the impact of our UBI on welfare in Malawi, we will conduct seven surveys over the course of the 12-year intervention to both our treatment and control groups. These surveys would be conducted at baseline and at the 6 month mark, 1 year mark, 3 year mark, 6 year mark, 9 year mark, and the 12 year mark after the last cash transfer has been distributed.  In these surveys, we will ask questions that measure whether the indicators we are interested in change as a result of the cash transfer. Our indicators are listed below:
 
 ### Intermediate Indicators 
 - What indicators will be used to measure outcomes?
@@ -230,6 +232,8 @@ These effects could generate positive spillovers for the entire community while 
         - Savings account balances
         - Bank account ownership
         - ROSCA participation
+
+Our main method of measuring changes among these indicators is simply by asking participants whether they have seen changes in any of these areas. For example, we would ask participants what their employment status was before and after the CT and whether the sector they are employed in has changed. However, for the product prices indicator which is in the market access section, we would also measure it by 
      
 ## Cost-Benefit Analysis
 

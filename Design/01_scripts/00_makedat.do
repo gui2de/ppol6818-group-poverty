@@ -70,5 +70,4 @@ replace hours_worked = . if employed != 1 & runiform() > .001
 label variable hours_worked "Hours Worked per Week"
 gen wage = rnormal(100, 30) * 1.2 * hours_worked 
 replace wage = . if runiform() < .1 | employed != 1  
-replace wage = 9999 if 
 label variable wage "Weekly Wage (in local currency)"

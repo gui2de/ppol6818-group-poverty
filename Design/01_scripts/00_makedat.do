@@ -159,7 +159,7 @@ histogram lat, percent ///
   xtitle("Latitude") ytitle("Percent") ///
   color(ltblue)
   
-histogram lat, percent ///
+histogram lon, percent ///
   title("Distribution of Longitudes") ///
   xtitle("Longitude") ytitle("Percent") ///
   color(ltblue)
@@ -327,6 +327,7 @@ br employed wage if employed == 0
 br employed wage if wage == 0 | wage == .
 br employed wage if wage == 0
 list employed wage if wage == 0
+br
 
 preserve
 
@@ -359,4 +360,5 @@ subtitle(" ")
 
 restore
 
+br
 scatter wage hours_worked

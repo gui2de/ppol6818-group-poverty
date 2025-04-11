@@ -71,3 +71,70 @@ label variable hours_worked "Hours Worked per Week"
 gen wage = rnormal(100, 30) * 1.2 * hours_worked 
 replace wage = . if runiform() < .1 | employed != 1  
 label variable wage "Weekly Wage (in local currency)"
+* -----------------------------------
+* Frequency Check: Enumerator ID
+* -----------------------------------
+tabulate enum_id, missing
+graph bar (count), over(enum_id, sort(1) descending label(angle(45))) ///
+    title("Number of Interviews per Enumerator") ///
+    ytitle("Number of Interviews")
+
+* -----------------------------------
+* Frequency Check: Start Hour
+* -----------------------------------
+gen hour_start = hh(start_time)
+tabulate hour_start, missing
+graph bar (count), over(hour_start, sort(1)) ///
+    title("Start Time Distribution (by Hour)") ///
+    ytitle("Interview Count")
+
+* -----------------------------------
+* Frequency Check: End Hour
+* -----------------------------------
+gen hour_end = hh(end_time)
+tabulate hour_end, missing
+graph bar (count), over(hour_end, sort(1)) ///
+    title("End Time Distribution (by Hour)") ///
+    ytitle("Interview Count")
+
+* -----------------------------------
+* Frequency Check: Duration Groups
+* -----------------------------------
+gen duration_group = .
+replace duration_group = 1 if duration_sec < 2000
+replace duration_group = 2 if duration_sec >= 2000 & duration_sec < 3000
+replace duration_group = 3 if duration_sec >= 3000 & duration_sec < 4000
+replace duration_group = 4 if duration_sec >= 4000
+label define duration_grp_lbl 1 "Under 2000s" 2 "2000–2999s" 3 "3000–3999s" 4 "4000s and above"
+label values duration_group duration_grp_lbl
+tabulate duration_group, missing
+
+graph bar (count), over(duration_group, label(angle(45))) ///
+    title("Interview Duration Distribution") ///
+    ytitle("Number of Interviews")
+
+
+* Convert start_time and end_time to Stata time format if not already
+format start_time %tc
+format end_time %tc
+
+* Calculate actual survey duration from timestamps (in seconds)
+gen actual_duration_sec = (end_time - start_time) / 1000
+
+* Compare with recorded duration_sec
+gen duration_diff = duration_sec - actual_duration_sec
+
+* Summary statistics to check the discrepancies
+summarize duration_sec actual_duration_sec duration_diff
+
+* Flag entries with major mismatches (optional)
+gen large_mismatch = abs(duration_diff) > 5  // flag if >5 seconds difference
+
+* List examples with mismatches (optional)
+list caseid enum_id start_time end_time duration_sec actual_duration_sec duration_diff ///
+     if large_mismatch == 1, sepby(enum_id)
+
+* Visualize difference (optional)
+histogram duration_diff, bin(50) normal ///
+    title("Difference between Recorded and Actual Duration (in seconds)")
+

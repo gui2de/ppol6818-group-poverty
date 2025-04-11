@@ -355,7 +355,7 @@ egen correct_obs = total(count_correct)
 keep incorrect_obs correct_obs
 duplicates drop
 
-graph hbar (asis) incorrect_obs correct_obs, bargap(30) blabel(bar) title("Survey Status: Wages") /// 
+graph hbar (asis) incorrect_obs correct_obs, bargap(30) blabel(bar) title("Survey Status: Wages Inconsistencies") /// 
 subtitle(" ")
 
 restore

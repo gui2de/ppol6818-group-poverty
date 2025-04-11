@@ -155,7 +155,7 @@ count if missing(lat) | missing(lon)
 list if missing(lat) | missing(lon)
 
 histogram lat, percent ///
-  title("Distribución of Latitudes") ///
+  title("Distribution of Latitudes") ///
   xtitle("Latitude") ytitle("Percent") ///
   color(ltblue)
   

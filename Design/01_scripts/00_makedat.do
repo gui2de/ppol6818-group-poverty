@@ -71,6 +71,11 @@ label variable hours_worked "Hours Worked per Week"
 gen wage = rnormal(100, 30) * 1.2 * hours_worked 
 replace wage = . if runiform() < .1 | employed != 1  
 label variable wage "Weekly Wage (in local currency)"
+
+* -----------------------------------
+* HIGH FREQUENCY CHECKS
+* -----------------------------------
+
 * -----------------------------------
 * Frequency Check: Enumerator ID
 * -----------------------------------
@@ -138,3 +143,220 @@ list caseid enum_id start_time end_time duration_sec actual_duration_sec duratio
 histogram duration_diff, bin(50) normal ///
     title("Difference between Recorded and Actual Duration (in seconds)")
 
+ * -----------------------------------
+ * Frequency Check: lat and lon
+ * -----------------------------------
+
+codebook lat lon
+describe lat lon
+summarize lat lon, detail
+list lat lon if lat < -90 | lat > 90 | lon < -180 | lon > 180
+count if missing(lat) | missing(lon)
+list if missing(lat) | missing(lon)
+
+histogram lat, percent ///
+  title("Distribución of Latitudes") ///
+  xtitle("Latitude") ytitle("Percent") ///
+  color(ltblue)
+  
+histogram lat, percent ///
+  title("Distribution of Longitudes") ///
+  xtitle("Longitude") ytitle("Percent") ///
+  color(ltblue)
+
+ * -----------------------------------
+ * Frequency Check: female
+ * -----------------------------------
+
+codebook female
+summarize female, detail
+tabulate female, miss
+count if missing(female)
+
+graph bar (count), over(female, label(angle(0))) ///
+    horizontal ///
+    blabel(bar) ///
+    bar(1, color(ltblue)) ///
+	bar(2, color(red)) ///
+    title("Respondents Gender Distribution")
+
+ * -----------------------------------
+ * Frequency Check: years of education
+ * -----------------------------------
+	
+codebook yrs_educ
+describe yrs_educ
+summarize yrs_educ, detail
+tabulate yrs_educ, miss
+tabulate yrs_educ, miss nolabel
+
+preserve
+
+gen info_educ = 1 if yrs_educ <= 11
+gen noinfo_educ = 1 if yrs_educ == 99
+gen missing_educ = 1 if yrs_educ == .
+
+egen info = total(info_educ)
+egen noinfo = total(noinfo_educ)
+egen missings = total(missing_educ)
+
+keep info noinfo missings
+duplicates drop
+
+graph hbar (asis) info noinfo missings, bargap(30) blabel(bar) title("Survey Status: Years of Education") /// 
+subtitle(" ")
+
+restore
+
+ * -----------------------------------
+ * Frequency Check: age
+ * -----------------------------------
+
+codebook age
+describe age
+summarize age
+tabulate age, missing
+tabulate age, nolabel missing
+
+preserve
+
+gen age_category = .
+replace age_category = 1 if age != 17 & age != 100  
+replace age_category = 2 if age == 17             
+replace age_category = 3 if age == 100      
+
+label define age_cat_lbl 1 "Correctly Specified" 2 "/" 3 "Age Range"
+label values age_category age_cat_lbl
+
+graph hbar (count), over(age_category, label(angle(0))) ///
+  bar(1, color(ltblue)) bar(2, color(ltpink)) bar(3, color(ltgreen)) ///
+  title("Labels in the Age Variable") ///
+  blabel(bar) ///
+  note("Note 1: Labels '/' y 'Age Range' only have 2 and 1 observations respectively.")
+
+restore
+
+histogram age, percent ///
+  title("Distribution of Ages") ///
+  xtitle("Age") ytitle("Percent") ///
+  color(ltblue)
+
+kdensity age, ///
+  title("Density of Ages") ///
+  xtitle("Age") ytitle("Density")
+
+ * -----------------------------------
+ * Frequency Check: employment status
+ * -----------------------------------
+
+codebook employed
+describe employed
+summarize employed, detail
+tabulate employed, miss
+tabulate employed, miss nolabel 
+graph bar (count), over(employed, label(angle(0))) ///
+    horizontal ///
+    blabel(bar) ///
+    bar(1, color(ltblue)) ///
+	bar(2, color(red)) ///
+    title("Respondents Employment Status Distribution")
+
+ * -----------------------------------
+ * Frequency Check: Number of hours worked
+ * -----------------------------------
+
+codebook hours_worked
+describe hours_worked
+summarize hours_worked, detail
+tabulate hours_worked, missing
+
+preserve
+
+gen info_hrsworked = 1 if hours_worked <= 55
+gen missing_hrsworked = 1 if hours_worked == .
+
+egen info = total(info_hrsworked)
+egen missings = total(missing_hrsworked)
+
+keep info missings
+duplicates drop
+
+graph hbar (asis) info missings, bargap(30) blabel(bar) title("Survey Status: Number of Hours Worked") /// 
+subtitle(" ")
+
+restore
+
+kdensity hours_worked, ///
+  title("Density of Hours Worked") ///
+  xtitle("Hours Worked") ytitle("Density")
+
+count if missing(hours_worked)
+
+ * -----------------------------------
+ * Frequency Check: Wage
+ * -----------------------------------
+
+codebook wage
+describe wage
+summarize wage, detail
+tabulate wage, missing
+count if missing(wage)
+
+preserve
+
+gen info_wage = 1 if wage <= 15000
+gen missing_wage = 1 if wage == .
+
+egen info = total(info_wage)
+egen missings = total(missing_wage)
+
+keep info missings
+duplicates drop
+
+graph hbar (asis) info missings, bargap(30) blabel(bar) title("Survey Status: Wages") /// 
+subtitle(" ")
+
+restore
+
+kdensity wage, ///
+  title("Density of Wages") ///
+  xtitle("Wages") ytitle("Density")
+
+list employed wage if employed == 0
+br employed wage if employed == 0
+br employed wage if wage == 0 | wage == .
+br employed wage if wage == 0
+list employed wage if wage == 0
+
+preserve
+
+gen inconsistency = 1 if employed == 1 & missing(wage) | employed == 1 & wage == 0
+count if inconsistency == 1
+
+br employed wage inconsistency if inconsistency == 1
+list employed wage inconsistency if inconsistency == 1
+
+br employed wage inconsistency if inconsistency == .
+list employed wage inconsistency if inconsistency == .
+
+br employed wage inconsistency if inconsistency == . & employed == 0
+list employed wage inconsistency if inconsistency == . & employed == 0
+
+br employed wage inconsistency if inconsistency == . & employed == 1
+list employed wage inconsistency if inconsistency == . & employed == 1
+
+gen count_incons = 1 if inconsistency == 1
+gen count_correct = 1 if inconsistency == .
+
+egen incorrect_obs = total(count_incons)
+egen correct_obs = total(count_correct)
+
+keep incorrect_obs correct_obs
+duplicates drop
+
+graph hbar (asis) incorrect_obs correct_obs, bargap(30) blabel(bar) title("Survey Status: Wages") /// 
+subtitle(" ")
+
+restore
+
+scatter wage hours_worked

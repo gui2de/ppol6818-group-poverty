@@ -1,9 +1,19 @@
+
 clear
 *make dat 
 set seed 081198
 set obs 1000
 
+**************************************************************
+Please change to where you saved the root git directory 
+**************************************************************
+cd "\\wsl.localhost\Ubuntu\home\ethan\ra_work\ppol6818\poverty"
 
+local out "Design/02_outputs"
+log using hfc_log, replace
+* -----------------------------------
+* Generate synthetic
+* -----------------------------------
 
 * Set programatic variables 
 gen caseid = _n
@@ -83,7 +93,7 @@ tabulate enum_id, missing
 graph bar (count), over(enum_id, sort(1) descending label(angle(45))) ///
     title("Number of Interviews per Enumerator") ///
     ytitle("Number of Interviews")
-
+graph export "`out'/enum_id.png", replace width(800) height(600) as(png)
 * -----------------------------------
 * Frequency Check: Start Hour
 * -----------------------------------
@@ -92,7 +102,7 @@ tabulate hour_start, missing
 graph bar (count), over(hour_start, sort(1)) ///
     title("Start Time Distribution (by Hour)") ///
     ytitle("Interview Count")
-
+graph export "`out'/start.png", replace width(800) height(600) as(png)
 * -----------------------------------
 * Frequency Check: End Hour
 * -----------------------------------
@@ -101,7 +111,7 @@ tabulate hour_end, missing
 graph bar (count), over(hour_end, sort(1)) ///
     title("End Time Distribution (by Hour)") ///
     ytitle("Interview Count")
-
+graph export "`out'/end.png", replace width(800) height(600) as(png)
 * -----------------------------------
 * Frequency Check: Duration Groups
 * -----------------------------------
@@ -117,7 +127,7 @@ tabulate duration_group, missing
 graph bar (count), over(duration_group, label(angle(45))) ///
     title("Interview Duration Distribution") ///
     ytitle("Number of Interviews")
-
+graph export "`out'/duration.png", replace width(800) height(600) as(png)
 
 * Convert start_time and end_time to Stata time format if not already
 format start_time %tc
@@ -142,7 +152,7 @@ list caseid enum_id start_time end_time duration_sec actual_duration_sec duratio
 * Visualize difference (optional)
 histogram duration_diff, bin(50) normal ///
     title("Difference between Recorded and Actual Duration (in seconds)")
-
+graph export "`out'/duration_diff.png", replace width(800) height(600) as(png)
  * -----------------------------------
  * Frequency Check: lat and lon
  * -----------------------------------
@@ -158,12 +168,12 @@ histogram lat, percent ///
   title("Distribution of Latitudes") ///
   xtitle("Latitude") ytitle("Percent") ///
   color(ltblue)
-  
+graph export "`out'/lat.png", replace width(800) height(600) as(png) 
 histogram lon, percent ///
   title("Distribution of Longitudes") ///
   xtitle("Longitude") ytitle("Percent") ///
   color(ltblue)
-
+graph export "`out'/lat.png", replace width(800) height(600) as(png) 
  * -----------------------------------
  * Frequency Check: female
  * -----------------------------------
@@ -179,7 +189,7 @@ graph bar (count), over(female, label(angle(0))) ///
     bar(1, color(ltblue)) ///
 	bar(2, color(red)) ///
     title("Respondents Gender Distribution")
-
+graph export "`out'/gender.png", replace width(800) height(600) as(png) 
  * -----------------------------------
  * Frequency Check: years of education
  * -----------------------------------
@@ -205,7 +215,7 @@ duplicates drop
 
 graph hbar (asis) info noinfo missings, bargap(30) blabel(bar) title("Survey Status: Years of Education") /// 
 subtitle(" ")
-
+graph export "`out'/education.png", replace width(800) height(600) as(png) 
 restore
 
  * -----------------------------------
@@ -233,17 +243,14 @@ graph hbar (count), over(age_category, label(angle(0))) ///
   title("Labels in the Age Variable") ///
   blabel(bar) ///
   note("Note 1: Labels '/' y 'Age Range' only have 2 and 1 observations respectively.")
-
+graph export "`out'/age.png", replace width(800) height(600) as(png) 
 restore
 
 histogram age, percent ///
   title("Distribution of Ages") ///
   xtitle("Age") ytitle("Percent") ///
   color(ltblue)
-
-kdensity age, ///
-  title("Density of Ages") ///
-  xtitle("Age") ytitle("Density")
+graph export "`out'/age_hist.png", replace width(800) height(600) as(png) 
 
  * -----------------------------------
  * Frequency Check: employment status
@@ -260,7 +267,7 @@ graph bar (count), over(employed, label(angle(0))) ///
     bar(1, color(ltblue)) ///
 	bar(2, color(red)) ///
     title("Respondents Employment Status Distribution")
-
+graph export "`out'/emp.png", replace width(800) height(600) as(png) 
  * -----------------------------------
  * Frequency Check: Number of hours worked
  * -----------------------------------
@@ -283,13 +290,13 @@ duplicates drop
 
 graph hbar (asis) info missings, bargap(30) blabel(bar) title("Survey Status: Number of Hours Worked") /// 
 subtitle(" ")
-
+graph export "`out'/hrsworked_missing.png", replace width(800) height(600) as(png) 
 restore
 
 kdensity hours_worked, ///
   title("Density of Hours Worked") ///
   xtitle("Hours Worked") ytitle("Density")
-
+graph export "`out'/hrsworked.png", replace width(800) height(600) as(png) 
 count if missing(hours_worked)
 
  * -----------------------------------
@@ -315,13 +322,13 @@ duplicates drop
 
 graph hbar (asis) info missings, bargap(30) blabel(bar) title("Survey Status: Wages") /// 
 subtitle(" ")
-
+graph export "`out'/wages_missing.png", replace width(800) height(600) as(png) 
 restore
 
 kdensity wage, ///
   title("Density of Wages") ///
   xtitle("Wages") ytitle("Density")
-
+graph export "`out'/wages.png", replace width(800) height(600) as(png) 
 list employed wage if employed == 0
 br employed wage if employed == 0
 br employed wage if wage == 0 | wage == .
@@ -357,8 +364,9 @@ duplicates drop
 
 graph hbar (asis) incorrect_obs correct_obs, bargap(30) blabel(bar) title("Survey Status: Wages Inconsistencies") /// 
 subtitle(" ")
-
+graph export "`out'/wage_mismatch.png", replace width(800) height(600) as(png) 
 restore
 
 br
 scatter wage hours_worked
+log close 

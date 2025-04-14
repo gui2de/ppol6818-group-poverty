@@ -202,6 +202,16 @@ Randomization will occur at the village level. While other methods were consider
 
 - Cluster Randomization: The study will randomize at the village level, with 60 villages (30 treatment and 30 control) across the three target districts (Phalombe, Nsanje, and Chitipa).
 - Sample Size: Each village will have approximately 250 households, resulting in a total sample size of 15,000 households (7,500 in treatment and 7,500 in control).
+  
+### Determining Sample Size Using Power and MDE
+As mentioned above, the number of households that will be in the treatment group is 7,500. We will verify that our sample size is sufficiently large by calculating the MDE needed to achieve 80% power. In order to determine our MDE, we will calculate the treatment effect on an average Malawian household. 
+
+The average Malawian household has approximately 4 members. Given that we are providing $0.35 per day per household member, that would total $1.40 per day for the average household. As mentioned previously, 85% of the population we are treating earns less than $0.69 per day. Thus, in providing these households with $1.40, we are giving them an additional 200% on top of their original income. Assuming Malawians spend 80% of their income on consumption, an additional $1.40 per day would increase their consumption spending by $1.12 (0.8 x $1.40). 
+
+Our null hypothesis would be that our treatment effect is  $0.00. Our alternative hypothesis would be that our treatment effect is greater than $0.00 (specifically, $1.12). Given that we expect an effect of $1.12, our standard deviation would be $0.20 and our MDE would be 2 or $0.40. This means that even if our treatment effect isn’t $1.12, we want to be able to detect any treatment effect greater than or equal to $0.40. 
+
+In order to determine whether our sample size is sufficient for an MDE of 2 where standard deviation is $0.20 and power at 80%, we will run a power calculation in Stata. This will tell us exactly how large of a sample size we need. We will then adjust the sample size accordingly. 
+
 
 ### Measuring Spillovers
 To account for spillover effects, as the study is conducted we will monitor the incomes and growth levels among the control villages. We will look out for patterns such as heightened earnings among control villages neighboring treatment villages. If we find this or any other bias, we will identify such spillover effects in the findings in our study.

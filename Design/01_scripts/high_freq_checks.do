@@ -5,9 +5,16 @@ set seed 081198
 set obs 1000
 
 **************************************************************
-Please change to where you saved the root git directory 
+* Please change to where you saved the root git directory 
 **************************************************************
-cd "\\wsl.localhost\Ubuntu\home\ethan\ra_work\ppol6818\poverty"
+
+if c(username) == "bl517" {
+	cd "/Users/bl517/Github/ppol6818-group-poverty"
+}
+else if c(username) == "ethan" {
+	cd "\\wsl.localhost\Ubuntu\home\ethan\ra_work\ppol6818\poverty"
+}
+
 
 local out "Design/02_outputs"
 log using hfc_log, replace
